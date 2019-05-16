@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54652047-8b1b-426d-a6e7-7bd621db477c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,11 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addd.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addd.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="-11">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calc.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calc.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -74,6 +83,7 @@
         <option value="$PROJECT_DIR$/sample.html" />
         <option value="$PROJECT_DIR$/add.js" />
         <option value="$PROJECT_DIR$/addd.html" />
+        <option value="$PROJECT_DIR$/calc.html" />
       </list>
     </option>
   </component>
@@ -153,12 +163,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557911530540</updated>
       <workItem from="1557911532492" duration="6536000" />
-      <workItem from="1557981311365" duration="15664000" />
+      <workItem from="1557981311365" duration="16722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22200000" />
+    <option name="totallyTimeSpent" value="23258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -232,8 +242,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-11">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
         </state>
       </provider>
     </entry>
