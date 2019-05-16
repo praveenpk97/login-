@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>naanal login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: RED;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: RED;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+<header>
+    <h2>NAANAL TECHNOLOGIES</h2>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Username"].value;
+            var y = document.forms["myForm"]["Password"].value;
+            if (x == "" && y == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else if( x == "new" && y == "new") {
+
+            }
+            else
+            {
+            alert("ENTER VALID PASSWORD");
+                return false;
+            }
+        }
+    </script>
+</header>
+
+<section>
+    <nav>
+        <h3>ABOUT NAANAL</h3>
+        <p> Naanal we believe in People, Process & Technology. One of the important pillars for building this ambitious enterprise is our team. We are a highly nimble and adaptable team of problem solvers, constantly seeking opportunities to optimize. Always questioning the boundaries of whats possible. Innovating with an ear to the ground, all the while shooting for the moon.</p>
+   <br>
+    </nav>
+    <article>
+<form name="myForm" action="https://naanal.in/about-us/" onsubmit="return validateForm()" method="post">
+        <h1>User name</h1>
+        <input type="text" name="Username" >
+        <Br>
+        <h1>Password</h1>
+        <input type="password" name="Password">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+        <Br>
+        <p>"We are on a mission to build a Self-Learning Supply Chain that can deliver outstanding customer experience, exponentially"</p>
+    </article>
+</section>
+
+<footer>
+    <p>© 2019 Naanal Technologies. All Rights Reserved.</p>
+</footer>
+
+<div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<script>
+    // Create a "close" button and append it to each list item
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+    }
+
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
